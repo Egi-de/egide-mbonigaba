@@ -9,8 +9,6 @@ interface PageLoaderProps {
 
 export function PageLoader({ finishLoading }: PageLoaderProps) {
   const [isLoading, setIsLoading] = useState(true);
-  const [displayText, setDisplayText] = useState('');
-  const fullText = 'EM';
   
   useEffect(() => {
     const timer = setTimeout(() => {

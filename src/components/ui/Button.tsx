@@ -36,6 +36,7 @@ export function Button({
   };
 
   if (asChild && React.isValidElement(children)) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return React.cloneElement(children as React.ReactElement<any>, {
       className: cn(baseStyles, variants[variant], sizes[size], className),
     });

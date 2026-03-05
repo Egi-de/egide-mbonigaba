@@ -80,7 +80,7 @@ export function Experience() {
           style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', fontSize: 'clamp(26px,5vw,32px)', fontWeight: 700, color: '#e2e8f0', marginBottom: '50px', gap: '8px 16px' }}
         >
           <span style={{ fontFamily: 'var(--font-mono,monospace)', fontSize: 'clamp(14px,3vw,18px)', fontWeight: 500, ...gradientText }}>02.</span>
-          Where I've Worked
+          Where I&apos;ve Worked
           <span style={{ display: 'block', height: '1px', flex: 1, maxWidth: '300px', background: 'linear-gradient(to right,rgba(249,115,22,0.6),transparent)' }} />
         </motion.h2>
 

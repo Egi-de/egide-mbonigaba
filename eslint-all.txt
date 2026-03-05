@@ -1,0 +1,14 @@
+﻿
+C:\Users\honorine\projects\myportifolio\portfolio-2026\src\components\sections\Experience.tsx
+  83:18  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\honorine\projects\myportifolio\src\app\api\contact\route.ts
+  3:10  warning  'prisma' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\honorine\projects\myportifolio\src\components\PageLoader.tsx
+  12:10  warning  'displayText' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  12:23  warning  'setDisplayText' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  13:9   warning  'fullText' is assigned a value but never used        @typescript-eslint/no-unused-vars
+
+Γ£û 5 problems (1 error, 4 warnings)
+

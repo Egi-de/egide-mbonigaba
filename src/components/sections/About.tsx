@@ -83,7 +83,7 @@ export function About() {
             className="md:col-span-2 order-1"
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
             <p style={{ color: '#94a3b8', marginBottom: '16px', lineHeight: 1.8, fontSize: '18px' }}>
-              Hello! I'm{' '}
+              Hello! I&apos;m{' '}
               <span style={{ background: 'linear-gradient(135deg,#f97316,#ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontWeight: 700 }}>
                 Egide Mbonigaba
               </span>
@@ -93,7 +93,7 @@ export function About() {
               With expertise in modern web technologies and design tools, I create user-centered interfaces that blend creativity and functionality. My design philosophy is rooted in empathy — every product I build is aesthetically appealing, meaningful and accessible.
             </p>
             <p style={{ color: '#94a3b8', marginBottom: '28px', lineHeight: 1.8 }}>
-              Here are a few technologies I've been working with recently:
+              Here are a few technologies I&apos;ve been working with recently:
             </p>
           </motion.div>
 

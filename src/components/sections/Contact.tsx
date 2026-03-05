@@ -77,7 +77,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 }}
           style={{ maxWidth: '600px', margin: '0 auto 50px', color: '#94a3b8', fontSize: '18px', lineHeight: 1.7, textAlign: 'center' }}
         >
-          I'm currently open to new opportunities. Whether you have a project in mind,
+          I&apos;m currently open to new opportunities. Whether you have a project in mind,
           a question, or just want to say hi — my inbox is always open!
         </motion.p>
 
@@ -182,7 +182,7 @@ export function Contact() {
               </button>
             </div>
 
-            {status === 'success' && <p style={{ color: '#4ade80', textAlign: 'center', fontFamily: 'var(--font-mono,monospace)', fontSize: '13px' }}>✓ Message sent! I'll get back to you soon.</p>}
+            {status === 'success' && <p style={{ color: '#4ade80', textAlign: 'center', fontFamily: 'var(--font-mono,monospace)', fontSize: '13px' }}>✓ Message sent! I&apos;ll get back to you soon.</p>}
             {status === 'error'   && <p style={{ color: '#f87171', textAlign: 'center', fontFamily: 'var(--font-mono,monospace)', fontSize: '13px' }}>✗ Something went wrong. Please try again.</p>}
           </form>
         </motion.div>
