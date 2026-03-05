@@ -293,9 +293,10 @@ function ProjectImageModal({
 }
 
 /* ── Featured project — alternating overlap with warm gradient overlay ── */
-function FeaturedProject({ project, index }: { project: Project; index: number }) {
+function FeaturedProject({ project, index, onImageClick }: { project: Project; index: number; onImageClick?: (p: Project) => void }) {
   const isEven = index % 2 === 0;
   const [isMobile, setIsMobile] = useState(false);
+  const hasImages = !!(project.images?.length || project.image);
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
@@ -322,6 +323,7 @@ function FeaturedProject({ project, index }: { project: Project; index: number }
       {/* Image */}
       <div
         className="feat-img"
+        onClick={() => hasImages && onImageClick && onImageClick(project)}
         style={{
           gridColumn: isMobile ? '1' : (isEven ? '1' : '2'),
           gridRow: '1',
@@ -330,6 +332,7 @@ function FeaturedProject({ project, index }: { project: Project; index: number }
           height: isMobile ? '220px' : '360px',
           borderRadius: '12px',
           overflow: 'hidden',
+          cursor: hasImages && onImageClick ? 'pointer' : 'default',
         }}
       >
         {/* Warm gradient overlay — unique to Egide */}
